@@ -1,1 +1,10 @@
-<org-nx-welcome></org-nx-welcome> <router-outlet></router-outlet>
+
+
+<button (click)="openConnection()">Open connection</button>
+<button (click)="closeConnection()">Close connection</button>
+
+<button (click)="sendMessage()">Send Message</button>
+
+<ul>
+    <li *ngFor="let message of receivedMessages">{{ message }}</li>
+</ul>
